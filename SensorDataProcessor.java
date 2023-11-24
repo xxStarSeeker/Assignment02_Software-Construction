@@ -1,5 +1,8 @@
 package sensordataprocessor;
 
+// Missing imports for BufferedWriter and FileWriter (Rose Musalli/ 2111237)
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 
 public class SensorDataProcessor {
 // Senson data and limits.
