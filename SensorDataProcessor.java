@@ -15,15 +15,15 @@ public SensorDataProcessor(double[][][] data, double[][] limit)
 this.data = data;
 this.limit = limit;
 }
-// calculates average of sensor data
+// calculates average of sensor data BUSHRA 2111452
 private double average(double[] array) {
-int i = 0;
-double val = 0;
-for (i = 0; i < array.length; i++) {
-val += array[i];
+    double sum = 0;
+    for (double value : array) {
+        sum += value;
+    }
+    return sum / array.length;
 }
-return val / array.length;
-}
+
 // calculate data
 public void calculate(double d) {
 int i, j, k = 0;
